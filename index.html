@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<style>
+  #wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem;
+    text-align: center;
+    max-width: 960px;
+    width: 90%;
+    font-size: 40px;
+  }
+
+  #can {
+    width: 875px;
+    height: 300px;
+  }
+
+  .aboveCanvasItem {
+    position: absolute;
+    /*top: 60px;
+    left: 90px;*/
+    font-size: 18px;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    outline: none;
+  }
+
+  .inputSum {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .math {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    
+  }
+
+  input  {
+    font-size: 18px;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    outline: none;
+  }
+
+  input:focus {
+    border-color: #98A2EC;
+  }
+  
+  input.wrong:focus {
+    border: 2px solid red;
+
+  }
+
+</style>
+<body>
+    <div id="wrapper">
+      <div class="math">
+        <span>6</span>
+        <span>+</span>
+        <span>5</span>
+        <span id="sum">=</span>
+        <span>?</span>
+      </div>
+      <!-- <input type="text"> -->
+      <canvas id="can" width="875" height="300"></canvas>
+    </div>
+    <script src="axis.js"></script>
+</body>
+</html>
